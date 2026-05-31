@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "ZHashCheck",
+  "version": "0.1.0",
+  "identifier": "org.zhashcheck.app",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:5173",
+    "beforeDevCommand": "pnpm dev",
+    "beforeBuildCommand": "pnpm build"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "ZHashCheck",
+        "width": 1100,
+        "height": 740,
+        "minWidth": 760,
+        "minHeight": 520,
+        "resizable": true,
+        "fullscreen": false,
+        "dragDropEnabled": true,
+        "decorations": true,
+        "transparent": false,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data: asset: https://asset.localhost; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self' ipc: http://ipc.localhost"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "category": "Utility",
+    "shortDescription": "Fast file hashing, verification, compare and dedup.",
+    "longDescription": "ZHashCheck computes MD5, SHA-1, SHA-256, SHA-512 and BLAKE3 in a single streaming pass. Verify against expected hashes or checksum files, compare two folders by content, and find duplicates safely.",
+    "copyright": "ZHashCheck contributors",
+    "license": "GPL-3.0-or-later",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.png",
+      "icons/icon.ico",
+      "icons/icon.icns"
+    ],
+    "targets": ["deb", "rpm", "appimage", "dmg", "msi"],
+    "fileAssociations": [
+      {
+        "ext": ["sha256", "sha1", "sha512", "sha224", "sha384", "md5", "blake3"],
+        "name": "Checksum file",
+        "description": "Hash checksum file (open with ZHashCheck to verify)",
+        "role": "Viewer"
+      }
+    ],
+    "linux": {
+      "deb": { "depends": [] },
+      "appimage": { "bundleMediaFramework": false }
+    },
+    "macOS": {
+      "minimumSystemVersion": "10.15"
+    },
+    "windows": {
+      "wix": { "language": "en-US" }
+    }
+  }
+}
