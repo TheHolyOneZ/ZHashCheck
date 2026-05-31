@@ -10,7 +10,7 @@ Drag a file in. Get every hash instantly. Verify a download. Compare folders.
 Find duplicates and reclaim space — safely.
 
 <p>
-  <a href="https://github.com/TheHolyOneZ/ZHashCheck/releases"><img alt="Release" src="https://img.shields.io/badge/release-coming%20soon-6366F1?style=flat-square" /></a>
+  <a href="https://zsync.eu/zhashcheck/#download"><img alt="Download" src="https://img.shields.io/badge/download-zsync.eu%2Fzhashcheck-6366F1?style=flat-square" /></a>
   <a href="./LICENSE"><img alt="License" src="https://img.shields.io/badge/license-GPL--3.0--or--later-10B981?style=flat-square" /></a>
   <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-475569?style=flat-square" />
   <img alt="Offline" src="https://img.shields.io/badge/network-zero%20telemetry-F59E0B?style=flat-square" />
@@ -78,7 +78,8 @@ You don't need to know what a "hash" is to use it. Just drop a file in the windo
 
 ## 🚀 Get it
 
-> 💡 **Recommended for everyone**: download the installer for your operating system.
+> 💡 **All pre-built installers live on the project homepage** — not on GitHub.
+> GitHub only hosts the source. Downloads are exclusively at **[zsync.eu/zhashcheck](https://zsync.eu/zhashcheck/#download)**.
 
 <table>
   <tr>
@@ -100,7 +101,9 @@ You don't need to know what a "hash" is to use it. Just drop a file in the windo
   </tr>
 </table>
 
-**👉 [Get the latest release from GitHub](https://github.com/TheHolyOneZ/ZHashCheck/releases)** &nbsp;·&nbsp; **[Project homepage](https://zsync.eu/zhashcheck/)**
+**👉 [Download ZHashCheck from the official homepage](https://zsync.eu/zhashcheck/#download)**
+
+<sub>Prefer to compile it yourself? See [Building from source](#-building-from-source) below — the full code is on GitHub.</sub>
 
 ---
 
@@ -195,7 +198,7 @@ No HTTP client. No auto-updater. No telemetry. No crash reporter calling home.
 
 ## 🧑‍💻 Building from source
 
-> Skip this section if you just want to use the app — grab a release instead.
+> Skip this section if you just want to use the app — grab a pre-built installer from **[zsync.eu/zhashcheck](https://zsync.eu/zhashcheck/#download)** instead.
 
 **Requirements:** [pnpm](https://pnpm.io), [Rust 1.80+](https://rustup.rs), and your platform's [Tauri v2 prerequisites](https://v2.tauri.app/start/prerequisites/).
 
@@ -267,8 +270,8 @@ More projects, articles, and contact info at [zsync.eu](https://zsync.eu/).
 | | |
 |---|---|
 | 🏠 **Project homepage** | <https://zsync.eu/zhashcheck/> |
+| 📥 **Downloads (Windows · macOS · Linux)** | <https://zsync.eu/zhashcheck/#download> &nbsp; *(the only place pre-built binaries are published)* |
 | 🐙 **Source code** | <https://github.com/TheHolyOneZ/ZHashCheck> |
-| 📦 **Releases / downloads** | <https://github.com/TheHolyOneZ/ZHashCheck/releases> |
 | 🐛 **Report a bug / request a feature** | <https://github.com/TheHolyOneZ/ZHashCheck/issues> |
 | 👤 **Developer's GitHub** | <https://github.com/TheHolyOneZ> |
 | 🌍 **Developer's other projects** | <https://zsync.eu/> |
